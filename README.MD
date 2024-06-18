@@ -117,7 +117,7 @@ Using the default parameters, we ran all the classifiers models that we have see
 
 | KNN | Decision Tree | SVM |
 | --- | --- | --- |
-| ![image](images/knn.png) | ![image](images/DecisionTree.png) | ![image](images/SVM.png) |
+| ![image](images/KNN.png) | ![image](images/DecisionTree.png) | ![image](images/SVM.png) |
 
 
 ### Improving the model
@@ -142,9 +142,13 @@ I will use the grid search with parameters that I believe can help to find the b
 
 #### Details
 
-| LR | KNN | Decision Tree | SVM |
-| --- | --- | --- | --- |
-| ![image](images/lrgrid.png) | ![image](images/knngrid.png)  | ![image](images/decisiontreegrid.png) | ![image](images/svmgrid.png)
+| LR | KNN |
+| --- | --- |
+| ![image](images/lrgrid.png) | ![image](images/knngrid.png)  | 
+
+| Decision Tree | SVM |
+ --- | --- |
+ ![image](images/decisiontreegrid.png) | ![image](images/svmgrid.png)
 
 Running the models with GridSearchCV we can see better values in the training and test scores but the times increased considerably particularly in the SVM to run it on my pc in comfortable times I limited it to 10000 iterations maximum, even so after analyzing the data we can see that the accuracy did improve considerably in relation to the models without GridSearchCV.
 
